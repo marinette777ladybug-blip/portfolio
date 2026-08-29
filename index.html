@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Day ☀️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="game">
+
+    <canvas id="gameCanvas" width="1000" height="650"></canvas>
+
+    <!-- HUD -->
+    <div id="hud">
+
+        <div class="title">
+            ☀️ PERFECT DAY
+        </div>
+
+        <div class="stats">
+            <span>🕐 <b id="gameTime">8:00 AM</b></span>
+            <span>❤️ <b id="happiness">50</b></span>
+            <span>⚡ <b id="energy">100</b></span>
+        </div>
+
+        <div class="quest">
+            🎯 <b>QUEST</b>
+            <div id="questText">🏠 Visit your HOME</div>
+        </div>
+
+    </div>
+
+
+    <!-- INVENTORY -->
+    <div id="inventory">
+
+        🎒 <b>INVENTORY</b>
+
+        <div id="inventoryItems">
+            Empty
+        </div>
+
+    </div>
+
+
+    <!-- BACK BUTTON -->
+    <button id="backButton" onclick="leaveScene()">
+        ← BACK
+    </button>
+
+
+    <!-- BIG TEMPORARY MESSAGE -->
+    <div id="bigMessage">
+
+        <div id="bigMessageText"></div>
+
+    </div>
+
+
+    <!-- NORMAL MESSAGE -->
+    <div id="messageBox">
+
+        <div id="messageText">
+            Welcome to your Perfect Day!
+        </div>
+
+        <div id="messageHint">
+            WASD / Arrow Keys = Move • E = Explore
+        </div>
+
+    </div>
+
+
+    <!-- QUESTION PANEL -->
+    <div id="questionPanel">
+
+        <h2 id="questionTitle">
+            Question
+        </h2>
+
+        <p id="questionText">
+            Question goes here
+        </p>
+
+        <div class="answers">
+
+            <button id="answerA">YES</button>
+
+            <button id="answerB">NO</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- START SCREEN -->
+    <div id="startScreen">
+
+        <div class="startCard">
+
+            <div class="sun">☀️</div>
+
+            <h1>PERFECT DAY</h1>
+
+            <h3>Your adventure begins...</h3>
+
+            <p>
+                Explore Sunny Town, complete quests,
+                solve puzzles, discover secrets and
+                make choices that create your perfect day!
+            </p>
+
+            <button id="startButton">
+                START ADVENTURE 🚀
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="microbit-items.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
